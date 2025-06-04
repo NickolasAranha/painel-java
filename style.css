@@ -1,0 +1,48 @@
+    body {
+      background-color: #ffffff;
+      color: #21A179;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .senha {
+      font-size: 6rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .ultimas {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .ultimas h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .ultimas ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ultimas li {
+      font-size: 2rem;
+      margin: 5px 0;
+    }
+
+    .dataHora {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        padding-top: 50px;
+        z-index: 1000
+
+        
+    }

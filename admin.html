@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal de Senhas - Guichês</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .senha-atual {
+      font-size: 4rem;
+      margin-bottom: 30px;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 15px 30px;
+      background-color: #bfc2ba;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Terminal de Senhas</h1>
+  <div class="senha-atual" id="senhaTerminal">000</div>
+
+  <div class="botoes">
+    <button onclick="chamarSenha(1)">Guichê 1</button>
+    <button onclick="chamarSenha(2)">Guichê 2</button>
+    <button onclick="chamarSenha(3)">Guichê 3</button>
+    <button onclick="resetarSenhas()">Reset</button>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
