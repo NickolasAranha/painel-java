@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Menu Principal</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f2f5;
-    }
+  <html lang="pt-BR">
 
-    .container {
-      text-align: center;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+      }
 
-    .botao {
-      display: block;
-      width: 200px;
-      padding: 15px;
-      margin: 15px auto;
-      font-size: 18px;
-      background-color: #21A179;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-    }
+      .container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
 
-    .botao:hover {
-      background-color: #21A179;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <a href="admin.html" class="botao">Admin</a>
-    <a href="painel.html" class="botao">Painel</a>
-    <a href="carrossel.html" class="botao">Carrossel</a>
-  </div>
-</body>
+      .botao {
+        display: block;
+        width: 200px;
+        padding: 15px;
+        margin: 15px auto;
+        font-size: 18px;
+        background-color: #21A179;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+      }
+
+      .botao:hover {
+        background-color: #16392e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="admin.html" class="botao">Admin</a>
+      <a href="painel.html" class="botao">Painel</a>
+      <a href="carrossel.html" class="botao">Carrossel</a>
+    </div>
+  </body>
 </html>
