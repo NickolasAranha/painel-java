@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terminal de Senhas - Guichês</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      height: 100vh;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal de Senhas - Guichês</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        height: 100vh;
+      }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
 
-    .senha-atual {
-      font-size: 4rem;
-      margin-bottom: 30px;
-    }
+      .senha-atual {
+        font-size: 4rem;
+        margin-bottom: 30px;
+      }
 
-    .botoes {
-      display: flex;
-      gap: 20px;
-    }
+      .botoes {
+        display: flex;
+        gap: 20px;
+      }
 
-    button {
-      font-size: 1.5rem;
-      padding: 15px 30px;
-      background-color: #bfc2ba;
-      color: #000;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
+      button {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+        background-color: #bfc2ba;
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    
+      button:hover {
+        background-color: #646463;
+        color: #ffffff;
+      }
+    </style>
+  </head>
 
-  </style>
+  <body>
+    <h1>Terminal de Senhas</h1>
+    <div class="senha-atual" id="senhaTerminal">000</div>
 
-</head>
-<body>
+    <div class="botoes">
+      <button onclick="chamarSenha(1)">Guichê 1</button>
+      <button onclick="chamarSenha(2)">Guichê 2</button>
+      <button onclick="chamarSenha(3)">Guichê 3</button>
+      <button onclick="resetarSenhas()">Reset</button>
+    </div>
 
-  <h1>Terminal de Senhas</h1>
-  <div class="senha-atual" id="senhaTerminal">000</div>
-
-  <div class="botoes">
-    <button onclick="chamarSenha(1)">Guichê 1</button>
-    <button onclick="chamarSenha(2)">Guichê 2</button>
-    <button onclick="chamarSenha(3)">Guichê 3</button>
-    <button onclick="resetarSenhas()">Reset</button>
-  </div>
+    <a href="index.html" class="botao-voltar">Voltar</button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
 
 
