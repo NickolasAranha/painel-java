@@ -27,6 +27,13 @@
 setInterval(atualizarDataHora, 1000);
 atualizarDataHora();
 
+const audioBeep = new Audio("https://www.orangefreesounds.com/wp-content/uploads/2017/09/Heart-monitor-sound.mp3");
+document.addEventListener('click', function () {
+  audioBeep.play().catch(() => {});
+}, { once: true });
+
+let ultimaSenhaTocada = localStorage.getItem('senhaAtual') || '000';
+
 document.addEventListener('DOMContentLoaded', function() {
   function atualizarPainel() {
     const senha = localStorage.getItem('senhaAtual') || '000';
@@ -36,6 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const lista = document.getElementById('ultimasSenhas');
     lista.innerHTML = '';
 
+    if (senha !== ultimaSenhaTocada) {
+      audioBeep.currentTime = 0;
+      audioBeep.play();
+      ultimaSenhaTocada = senha;
+     }
+      
     ultimas.forEach(s => {
       const li = document.createElement('li');
       li.textContent = s;
