@@ -67,14 +67,20 @@
         position: fixed;
         right: 20px;
         top: 10px;
+        color: #000000;
       }
+      
       select {
-      height: 75px;
+      height: 30px;
       width:  130px;
       padding: 5px 10px;
+      color: #21A179;
+      background-color: #ddd5d5;
       border-radius: 5px;
       border: 1px solid #ccc;
       position: fixed;
       right: 20px;
-      top: 30px;
+      top: 35px;
+      text-align: center;
+      text-transform: uppercase;
     }
