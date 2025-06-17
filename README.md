@@ -46,7 +46,7 @@ As principais funcionalidades adicionadas ao projeto incluem:
 * **Data e Hora**: Exibição dinâmica de data e hora no painel.
 * **Carrossel de Notícias**: Um carrossel interativo para exibir notícias em formato de vídeo e imagem.
 * **QR Code de Avaliação**: Um QR Code com um link direto para um formulário de avaliação da "empresa", permitindo feedback dos usuários.
-
+* **Alteração e manutenção do idioma da página**: Função que permite alterar o idioma da interface e mantém essa escolha para as demais páginas utilizando LocalStorage.
 
 
 <br>

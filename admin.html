@@ -40,23 +40,46 @@
         background-color: #646463;
         color: #ffffff;
       }
+  
+      label {
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        color: black;
+      }
+      select {
+      height: 75px;
+      width:  130px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      position: fixed;
+      right: 20px;
+      top: 30px;
+    }
     </style>
   </head>
 
   <body>
-    <h1>Terminal de Senhas</h1>
+    <h1 id="senhatexto">Terminal de Senhas</h1>
     <div class="senha-atual" id="senhaTerminal">000</div>
 
     <div class="botoes">
-      <button onclick="chamarSenha(1)">Guichê 1</button>
-      <button onclick="chamarSenha(2)">Guichê 2</button>
-      <button onclick="chamarSenha(3)">Guichê 3</button>
+      <button onclick="chamarSenha(1)" id="guiche1">Guichê 1</button>
+      <button onclick="chamarSenha(2)" id="guiche2">Guichê 2</button>
+      <button onclick="chamarSenha(3)" id="guiche3">Guichê 3</button>
       <button onclick="resetarSenhas()">Reset</button>
     </div>
 
-    <a href="index.html" class="botao-voltar">Voltar</button>
-
+    <a href="index.html" class="botao-voltar" id="return">Voltar</a>Add commentMore actions
+    <label for="idioma" id="idiomatexto">Escolha o idioma:</label>
+    <select id="idioma" onchange="trocarIdioma(this.value)">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+    </select>
     <script src="script.js"></script>
+    <script src="idiomas.js"></script>
+
   </body>
 </html>
 

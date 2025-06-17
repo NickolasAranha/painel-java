@@ -42,14 +42,40 @@
       .botao:hover {
         background-color: #16392e;
       }
+      
+     label {
+        position: fixed;
+        right: 20px;
+        top: 10px;
+      }
+      select {
+      height: 75px;
+      width:  130px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      position: fixed;
+      right: 20px;
+      top: 30px;
+    }
     </style>
   </head>
 
   <body>
     <div class="container">
       <a href="admin.html" class="botao">Admin</a>
-      <a href="painel.html" class="botao">Painel</a>
-      <a href="carrossel.html" class="botao">Carrossel</a>
+      <a href="painel.html" class="botao" id="painel">Painel</a>
+      <a href="carrossel.html" class="botao" id="carrossel">Carrossel</a>
     </div>
+
+    <label for="idioma" id="idiomatexto">Escolha o idioma:</label>
+    <select id="idioma" onchange="trocarIdioma(this.value)">
+       <option value="pt">Português</option>
+        <option value="en">English</option>
+    </select>
+    <script src="idiomas.js"></script>
+
   </body>
+
+
 </html>
