@@ -159,3 +159,6 @@
       background-color: #21A179;
     }
     
+    #description {
+      text-transform: capitalize;
+    }

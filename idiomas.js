@@ -9,7 +9,9 @@
             guiche2: "Guichê 2",
             guiche3: "Guichê 3",
             idiomatexto: "Escolha o Idioma:",
-             return: "Voltar"           
+            return: "Voltar",         
+            mudarCidadeTexto: "Mude a cidade:", 
+            placeholderCidade: "Digite o nome da cidade", 
         },
         en: {
             senhatexto: "Ticket Station",
@@ -17,7 +19,9 @@
             guiche2: "Box 2",
             guiche3: "Box 3",
             idiomatexto: "Choose language:",
-            return: "Back"
+            return: "Back",
+            mudarCidadeTexto: "Change city:", 
+            placeholderCidade: "Enter city name"
         }
     },
     index: {

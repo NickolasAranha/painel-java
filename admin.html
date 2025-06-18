@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal de Senhas - Guichês</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-      body {
+      body {  
         height: 100vh;
       }
 
@@ -55,11 +56,30 @@
       <button onclick="resetarSenhas()">Reset</button>
     </div>
 
+
+    <div class="form">
+      <h3 id="mudarCidadeTexto">Mude a cidade: </h3>
+      <div class="form-input-container">
+          <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+          <button id="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+      </div>
+    </div>
+    <div class="weather-data">
+      <p id="temperature"><span>38</span> &deg;C</p>      
+      <div id="description-container">
+        <p id="description">Nublado</p>
+      </div>
+    </div>
+
+    </div>
     <label for="idioma" id="idiomatexto">Escolha o idioma:</label>
     <select id="idioma" onchange="trocarIdioma(this.value)">
         <option value="pt">Português</option>
         <option value="en">English</option>
     </select>
+
 
     <a href="index.html" class="botao-voltar" id="return">Voltar</a>
 
@@ -67,8 +87,7 @@
 
     <script src="script.js"></script>
     <script src="idiomas.js"></script>
-    <script src="temas.js"></script>
-    
+
   </body>
 </html>
 
