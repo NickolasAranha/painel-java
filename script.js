@@ -7,8 +7,7 @@ const searchBtn = document.querySelector("#search");
 const LOCAL_STORAGE_CITY_KEY = 'userCityPreference';
 const DEFAULT_CITY = 'Carapicuíba';
 
-const tempElement = document.querySelector("#temperature span");
-const descElement = document.querySelector("#description");
+const tempElement = document.querySelector("#temperatura span");
 
 const getWeatherData = async(city) => {
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
@@ -97,13 +96,12 @@ function chamarSenha(guiche) {
     document.getElementById('senhaTerminal').textContent = localStorage.getItem('senhaAtual') || '000';
 }
 
-const dataHoraElement = document.getElementById('dataHora');
+const dataHoraElement = document.getElementById('data-hora');
 if (dataHoraElement) {
     function atualizarDataHora() {
         const agora = new Date();
-        const data = agora.toLocaleDateString('pt-BR');
         const hora = agora.toLocaleTimeString('pt-BR');
-        document.getElementById('dataHora').textContent = `${data} ${hora}`;
+        document.getElementById('data-hora').textContent = `${hora}`;
     }
 
     setInterval(atualizarDataHora, 1000);

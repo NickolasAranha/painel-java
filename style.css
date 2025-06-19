@@ -10,40 +10,118 @@
       font-family: 'Arial', sans-serif;
     }
 
+    .painel {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .senhas {
+      height: 100vh;
+      margin: 0px auto;
+      display: inline;
+    }
+
+    .senha-atual {
+      margin-top: 50px;
+      padding: 50px;
+      border: 5px solid #21A179;
+      border-radius: 15px;
+    }
+
+    #titulo-senha-atual {
+      margin: 0px 5px 15px 5px;
+      font-size: 4.5rem;
+      text-transform: uppercase;
+    }
+
+    .infos {
+      height: 100vh;
+      width: 500px;
+      color: white;
+      background-color: #21a178;
+      border-left: 5px solid #0e151352;
+      display: inline;
+      column-gap: 5px;
+    }
+
+    .temperatura-hora {
+      margin: 0px 0px 10px 0px;
+      padding: 15px;
+      font-size: 1rem;
+      background-color: #ffffff0e;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #temperatura {
+      margin: 0px;
+    }
+
+    .mensagem {
+      width: 350px;
+      height: auto;
+      margin: 100px auto auto auto;
+      padding: 5px;
+      background-color: #0e151352;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+
+    #campo-mensagem {
+      margin: 15px;
+    }
+
+    #titulo-info {
+      margin-top: 75px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 35px;
+    }
+
+    .qrcode {
+      width: 200px;
+      height: 200px;
+      margin: 30px auto;
+      padding: 5px;
+      background-color: #0e151352;
+    }
+
     .senha {
       font-size: 6rem;
       font-weight: bold;
       text-align: center;
     }
 
-    .ultimas {
+    .senhas-anteriores {
       margin-top: 40px;
       text-align: center;
     }
 
-    .ultimas h2 {
-      margin-bottom: 10px;
+    .senhas-anteriores h2 {
+      margin: 80px auto 15px auto;
       font-size: 2rem;
+      text-transform: uppercase;
     }
 
-    .ultimas ul {
+    .senhas-anteriores ul {
+      padding: 15px; 
+      background-color: #bfc2ab14;
+      border-radius: 10px;
       list-style: none;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 30px;
     }
 
-    .ultimas li {
-      font-size: 2rem;
-      margin: 5px 0;
-    }
-
-    .dataHora {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      padding-top: 50px;
-      z-index: 1000;
+    .senhas-anteriores li {
+      font-size: 2.5rem;
     }
 
     .botao-voltar {
@@ -157,8 +235,4 @@
 
     .dark-mode .botao-voltar:hover {
       background-color: #21A179;
-    }
-    
-    #description {
-      text-transform: capitalize;
     }

@@ -7,24 +7,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
-    <div class="weather-data">
-      <p id="temperature"><span>---</span> &deg;C</p>      
-      <div id="description-container"></div>
-      <p id="description">---</p>
-    </div>
+  <body class="painel">
+    <section class="senhas">
+      <div class="senha-atual">
+        <h1 id="titulo-senha-atual">senha:</h1>
+        <div class="senha" id="senhaAtual">000</div>
+      </div>
+      <div class="senhas-anteriores">
+        <h2 id="titulo-senhas-anteriores">Últimas Senhas</h2>
+        <ul id="ultimasSenhas">
+          <li>---</li>
+          <li>---</li>
+          <li>---</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="dataHora" id="dataHora"></div>
-    <div class="senha" id="senhaAtual">000</div>
-
-    <div class="ultimas">
-      <h2 id="senhastexto">Últimas Senhas</h2>
-      <ul id="ultimasSenhas">
-        <li>---</li>
-        <li>---</li>
-        <li>---</li>
-      </ul>
-    </div>
+    <section class="infos">
+      <div class="temperatura-hora">
+        <p id="temperatura"><span>---</span> &deg;C</p> 
+        <div class="dataHora" id="data-hora"></div>  
+      </div>
+      <div class="mensagem">
+        <p id="campo-mensagem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, iste assumenda fugiat commodi amet hic dolorum maiores eum neque itaque, nam repellat esse distinctio nemo culpa, voluptatem facere recusandae! Ullam!</p>
+      </div>
+      <h2 id="titulo-info">O que achou do atendimento? Nos avalie!</h2>
+      <div class="qrcode">QR CODE</div>
+    </section>
  
     <script src="script.js"></script>
     <script src="idiomas.js"></script>
