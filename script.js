@@ -2,7 +2,7 @@
 const apiKey = "a28750fda7633465724fc35b33fd7bfa";
 
 const cityInput = document.querySelector("#city-input");
-const searchBtn = document.querySelector("#search");
+const searchBtn = document.querySelector("#pesquisa");
 
 const LOCAL_STORAGE_CITY_KEY = 'userCityPreference';
 const DEFAULT_CITY = 'Carapicuíba';

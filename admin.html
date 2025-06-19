@@ -27,6 +27,12 @@
         gap: 20px;
       }
 
+      p {
+        position: fixed;
+        top: 0;
+        left: 65px;
+      }
+
       button {
         font-size: 1.5rem;
         padding: 15px 30px;
@@ -36,6 +42,17 @@
         border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      #pesquisa {
+        font-size: 1rem;
+        background-color: #ffffff;
+        padding: 0px;
+      }
+
+      #pesquisa:hover {
+        color: #646463;
+        background-color: none;
       }
     
       button:hover {
@@ -57,23 +74,15 @@
     </div>
 
 
-    <div class="form">
-      <h3 id="mudarCidadeTexto">Mude a cidade: </h3>
-      <div class="form-input-container">
-          <input type="text" placeholder="Digite o nome da cidade" id="city-input">
-          <button id="search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-      </div>
-    </div>
-    <div class="weather-data">
-      <p id="temperature"><span>38</span> &deg;C</p>      
-      <div id="description-container">
-        <p id="description">Nublado</p>
-      </div>
+    <div class="localizacao">
+      <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+      <button id="pesquisa">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </div>
 
-    </div>
+    <p id="temperature"><span>38</span> &deg;C</p>
+
     <label for="idioma" id="idiomatexto">Escolha o idioma:</label>
     <select id="idioma" onchange="trocarIdioma(this.value)">
         <option value="pt">Português</option>
