@@ -59,6 +59,12 @@
         background-color: #646463;
         color: #ffffff;
       }
+
+      #temperatura {
+        position: fixed;
+        bottom: 10px;
+        top: 15px;
+      }
     </style>
   </head>
 
@@ -81,7 +87,7 @@
       </button>
     </div>
 
-    <p id="temperature"><span>38</span> &deg;C</p>
+      <p id="temperatura"><span>---</span> &deg;</p> 
 
     <label for="idioma" id="idiomatexto">Escolha o idioma:</label>
     <select id="idioma" onchange="trocarIdioma(this.value)">
