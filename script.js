@@ -202,3 +202,35 @@ if (botao) {
         }
     });
 }
+
+// Troca QRCODE:
+document.addEventListener('DOMContentLoaded', function() {
+
+    const elementoTexto = document.getElementById('titulo-info');
+    const elementoQrCode = document.getElementById('qrcode-dinamico');
+
+    if (elementoTexto && elementoQrCode) {
+        
+        const conteudos = [
+            {
+                texto: "O que achou do atendimento? Nos avalie!",
+                imagemQrCode: "qr_code_forms.png" 
+            },
+            {
+                texto: "Acesse dicas importantes para cuidar de quem você ama!",
+                imagemQrCode: "qr_code_site.png"
+            }];
+
+        let indiceAtual = 0;
+
+        function alterarConteudo() {
+            indiceAtual = (indiceAtual + 1) % conteudos.length;
+            const novoConteudo = conteudos[indiceAtual];
+            elementoTexto.textContent = novoConteudo.texto;
+            elementoQrCode.alt = `QR Code para: ${novoConteudo.texto}`;
+        }
+
+        const intervaloDeTempo = 30000; 
+        setInterval(alterarConteudo, intervaloDeTempo);
+    }});
+

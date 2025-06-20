@@ -86,22 +86,17 @@
       line-height: 35px;
     }
 
-    .qrcode {
-      width: 200px;
-      height: 200px;
-      margin: 30px auto;
-      padding: 5px;
-      background-color: #0e151352;
-      object-fit: fill;
+.qrcode-container {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    img {
-      width: 200px;
-      height: 200px;
-    }
+      justify-content: center;
+      margin-top: 15px;
+      max-width: 100%;
+}
+    #qrcode-dinamico {
+       width: 200px;
+        height: auto;
+        object-fit: contain;
+        }
 
     .senha {
       font-size: 6rem;
