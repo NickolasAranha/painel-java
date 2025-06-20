@@ -11,6 +11,7 @@
     }
 
     .painel {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -68,6 +69,8 @@
       background-color: #0e151352;
       border-radius: 5px;
       font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
     }
 
     #campo-mensagem {
@@ -89,6 +92,15 @@
       margin: 30px auto;
       padding: 5px;
       background-color: #0e151352;
+      object-fit: fill;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
     }
 
     .senha {
@@ -109,6 +121,7 @@
     }
 
     .senhas-anteriores ul {
+      margin: 0px;
       padding: 15px; 
       background-color: #bfc2ab14;
       border-radius: 10px;
@@ -229,13 +242,17 @@
 
     /*admin + botão voltar- darkmode*/
 
-    .dark-mode h1 {
+    .dark-mode #senhatexto {
       transition: color 0.3s ease;
     }
 
     .dark-mode .botoes button {
-      color: white;
+      color: #ffffff;
       background-color: #16392e;
+    }
+
+    .dark-mode i {
+      color: #ffffff;
     }
 
     .dark-mode .botoes button:hover {
@@ -250,3 +267,16 @@
     .dark-mode .botao-voltar:hover {
       background-color: #21A179;
     }
+
+  /*painel- darkmode*/
+
+  .dark-mode .senha-atual {
+    background-color: #16392e;
+    border: 5px solid #29725b;
+  }
+
+
+  .dark-mode .infos {
+    background-color: #16392e;
+    border-left: 5px solid #29725b;
+  }
