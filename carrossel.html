@@ -1,17 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
+  <style>
+    .item {
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 100%;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    
+    video{
+      width:1000px;
+      height:500px;
+      object-fit: cover;
+      display: block;
+      margin:0 auto;
+    }
+    h2{
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
 </head>
 <body>
-    <a href="index.html" class="botao-voltar" id="return">Voltar</a>
-    <button id="pega-tema"></button>
-    
-    <script src="idiomas.js"></script>
-    <script src="script.js"></script>
+
+  <h2>CARROSSEL</h2>
+
+ <!--VIDEOS-->
+  <div class="owl-carousel owl-theme">
+  <div class="item">
+    <div class="video-container">
+      <video src="animaçãohospital.mp4" muted controls></video>
+    </div>
+  </div>
+  <div class="item">
+    <div class="video-container">
+      <video src="tourhospital.mp4" muted controls></video>
+    </div>
+  </div>
+</div>
+
+   <script src="idiomas.js"></script>
+   <script src="script.js"></script>
+   <script src="owlcarousel/jquery.min.js"></script>
+   <script src="owlcarousel/owl.carousel.min.js"></script>
+   <script>
+  $(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      margin: 10,
+      video: true,
+      autoplay: false,
+      responsive: {
+        0: { items: 1 },
+          600: { items: 1 },
+          1000: { items: 1 }
+      }
+    });
+
+    //reprodução automatica
+    function playActiveVideo() {
+      var video = $('.owl-item.active video').get(0);
+      if (video) {
+        video.play();
+        video.onended = function () {
+          owl.trigger('next.owl.carousel');
+        };
+      }
+    }
+
+    owl.on('translated.owl.carousel', function () {
+      playActiveVideo();
+    });
+
+    playActiveVideo();
+  });
+   </script>
+
+   <a href="index.html" class="botao-voltar" id="return">Voltar</a>
+   <button id="pega-tema" border-radius="8px" display="inline-block"></button>
 
 </body>
 </html>
