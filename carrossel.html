@@ -30,15 +30,40 @@
       display: block;
       margin:0 auto;
     }
-    h2{
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    #pega-tema {
+      margin-left: 3px;
+      position:static;
     }
+
+    #data-hora {
+      color: white;
+      padding: 5px;
+    }
+
+    #temperatura {
+      color: white;
+      padding: 5px;
+    }
+
+    /*dark-mode*/
+
+    body.dark-mode {
+      background-color: #091a15;
+    }
+
+    .dark-mode .barra-info {
+      background-color: #16392ed3;
+    }
+
   </style>
 </head>
 <body>
-
-  <h2>CARROSSEL</h2>
+  <section class="barra-info">
+    <button id="pega-tema"></button>
+    <div class="dataHora" id="data-hora"></div>
+    <p id="temperatura"><span>---</span> &deg;</p>
+  </section>
 
  <!--VIDEOS-->
   <div class="owl-carousel owl-theme">
@@ -95,7 +120,6 @@
    </script>
 
    <a href="index.html" class="botao-voltar" id="return">Voltar</a>
-   <button id="pega-tema" border-radius="8px" display="inline-block"></button>
 
 </body>
 </html>
