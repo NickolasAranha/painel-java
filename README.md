@@ -15,6 +15,7 @@ Para o desenvolvimento do painel, utilizamos as seguintes tecnologias:
 * **CSS** (Linguagem de Estilos)
 * **JavaScript** (Linguagem de Programação)
 * **Owl Carousel** (Plugin JavaScript construído com jQuery)
+* **OpenWeatherMap**: API Utilizada para exibir a temperatura atual da cidade informada pelo usuário.
 
 
 ### Plataformas Auxiliares
@@ -23,7 +24,7 @@ Contamos com o apoio das seguintes plataformas durante o desenvolvimento:
 
 * **Coolors**: Utilizado para gerar uma paleta de cores harmoniosa e adequada ao projeto.
 * **QR Code Generator**: Site apresentado em aula, que nos permitiu criar um QR Code para vincular a um formulário de avaliação.  
-
+* **Carrd**: Utilizado para criar um site instrutivo que contém "dicas de saúde" para os usuários se sentirem amparados pelo ambiente.
 <br>
 
 ---
@@ -44,10 +45,11 @@ As principais funcionalidades adicionadas ao projeto incluem:
 * **Histórico de Senhas**: Exibição das últimas senhas geradas para acompanhamento.
 * **Reinício de Senhas**: Funcionalidade para reiniciar todas as senhas geradas, limpando o histórico.
 * **Data e Hora**: Exibição dinâmica de data e hora no painel.
-* **Carrossel de Notícias**: Um carrossel interativo para exibir notícias em formato de vídeo e imagem.
-* **QR Code de Avaliação**: Um QR Code com um link direto para um formulário de avaliação da "empresa", permitindo feedback dos usuários.
-* **Alteração e manutenção do idioma da página**: Função que permite alterar o idioma da interface e mantém essa escolha para as demais páginas utilizando LocalStorage.
-
+* **Clima**: Exibição dinâmica da temperatura atual com base na cidade informada pelo usuário, com persistência de dados utilizando 'localStorage'.
+* **Carrossel de Vídeos**: Um carrossel interativo que exibe vídeos informativos, institucionais e educativos de forma contínua e envolvente.
+* **QR Codes Dinâmicos**: No painel de atendimento, duas mensagens são exibidas alternadamente, cada uma acompanhada de um QR Code correspondente. Um direciona para um formulário de avaliação e o outro para um site com dicas de saúde — ambos trocam automaticamente a cada intervalo de tempo.
+* **Suporte multilíngue**: Função que permite alterar o idioma da interface e mantém essa escolha para as demais páginas utilizando `localStorage`.
+* **Tema Claro/Escuro**: Todas as páginas possuem suporte ao tema claro e escuro, com botão de alternância e persistência via `localStorage`.
 
 <br>
 
